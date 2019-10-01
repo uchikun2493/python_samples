@@ -4,7 +4,7 @@ import wave
 
 if __name__=='__main__':
     REC_TIME = 5
-    FILE_PATH = "output.wav" #音声を保存するファイル名
+    FILE_PATH = "./audio/output.wav" #音声を保存するファイル名
     FMT = pyaudio.paInt16  # 音声のフォーマット
     CH = 1              # チャンネル1(モノラル)
     SAMPLING_RATE = 44100 # サンプリング周波数

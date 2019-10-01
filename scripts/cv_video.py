@@ -6,7 +6,7 @@ width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
 height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
 
 fourcc = cv2.VideoWriter_fourcc(*'H264')
-writer = cv2.VideoWriter('output.avi', fourcc, 30, (width, height))
+writer = cv2.VideoWriter('./output/video.avi', fourcc, 30, (width, height))
 
 while True:
     ret, frame = cap.read()
